@@ -12,6 +12,7 @@ function App() {
   const [allMsg, setAllMsg] = React.useState([]);
 
   const handleChange = (e) => {
+    console.log(e)
     setMsg(e.target.value);
   };
 
@@ -29,7 +30,7 @@ function App() {
     <Box bgColor={"gray.900"}>
       <Navbar/>
       <MsgBox allMsg={allMsg}/>
-      <InputBox handleChange={handleChange} handleSend={handleSend} msg={msg}/>
+      <InputBox handleChange={handleChange} handleSend={handleSend} msg={msg} setMsg={setMsg}/>
     </Box>
   );
 }

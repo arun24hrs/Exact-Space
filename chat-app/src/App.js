@@ -16,10 +16,13 @@ function App() {
   };
 
   const handleSend = () => {
-    const user = Math.floor(Math.random() * user_list.length);
+    if(msg !== ""){
+      const user = Math.floor(Math.random() * user_list.length);
     const newMsg = [user_list[user], msg];
     setAllMsg([...allMsg, newMsg]);
     setMsg("");
+    }
+    
   };
   
   return (

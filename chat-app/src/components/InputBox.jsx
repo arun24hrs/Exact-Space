@@ -2,7 +2,7 @@ import { Box, Input } from "@chakra-ui/react";
 import React from "react";
 import { LuSend } from "react-icons/lu";
 // import EmojiPicker from './EmojiPicker';
-import InputEmoji from "react-input-emoji";
+// import InputEmoji from "react-input-emoji";
 
 const InputBox = ({ handleChange, handleSend, msg, setMsg }) => {
   return (
